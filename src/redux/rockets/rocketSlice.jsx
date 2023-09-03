@@ -22,15 +22,17 @@ export const fetchRockets = createAsyncThunk(
       const rocketsInfo = [];
 
       res.forEach((item) => {
-        const piece = {
-          id: item.id,
-          name: item.rocket_name,
-          type: item.rocket_type,
-          img: item.flickr_images[0],
-          description: item.description,
-          reserved: false,
-        };
-        rocketsInfo.push(piece);
+        if (item.id > 1) {
+          const piece = {
+            id: item.id,
+            name: item.rocket_name,
+            type: item.rocket_type,
+            img: item.flickr_images[0],
+            description: item.description,
+            reserved: false,
+          };
+          rocketsInfo.push(piece);
+        }
       });
 
       return rocketsInfo;

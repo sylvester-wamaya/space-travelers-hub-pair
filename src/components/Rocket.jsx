@@ -8,7 +8,7 @@ function Rocket({
   id, name, img, description, reserved,
 }) {
   const dispatch = useDispatch();
-
+  console.log(id);
   return (
     <>
       <div className="col-4 pb-3">
