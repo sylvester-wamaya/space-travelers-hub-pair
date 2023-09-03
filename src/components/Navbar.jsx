@@ -3,7 +3,7 @@ import logo from '../utilities/logo.png';
 
 function Navbar() {
   return (
-    <div className="navbar navbar-light bg-light">
+    <div className="navbar navbar-light bg-light" id="fixed-nav">
       <div className="container">
         <div className="d-flex gap-4 align-items-center">
           <img style={{ width: '50px' }} src={logo} alt="" />

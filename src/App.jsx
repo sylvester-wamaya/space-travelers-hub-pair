@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
 
-      <Navbar id="fixed-nav" />
+      <Navbar />
       <Routes>
         <Route path="myprofile" element={<MyProfile />} />
         <Route path="/rockets" element={<Rockets />} />
