@@ -5,3 +5,7 @@ a {
 .active {
   text-decoration: underline;
 }
+#fixed-nav{
+  position: fixed;
+  top: 0;
+}
